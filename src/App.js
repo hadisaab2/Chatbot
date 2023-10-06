@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { ChatbotContext } from "./Context/ChatbotContext";
+import { useContext,useEffect } from "react";
 
+import MainLayout from "./MainLayout";
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const { screen } = useContext(ChatbotContext);
+  const [mobile, setmobile] = screen;
+
+  useEffect(() => {
+    window.parent.postMessage("checksize", "*");
+  },[])
+
+  useEffect(() => {
+    const handleMessage = (evt) => {
+      if (evt.data === "notMobile" || evt.data === "Mobile") {
+        setmobile(evt.data);
+      }
+    };
+  
+    window.addEventListener("message", handleMessage);
+  
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("message", handleMessage);
+    };
+  }, []);
+
+  return <MainLayout mobile={mobile} />;
 }
 
 export default App;
