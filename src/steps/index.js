@@ -44,7 +44,7 @@ export const chatbotsteps = [
     id: 3,
     message: null,
     Component: Chatchoices,
-    await: 3000,
+    await: 2000,
   },
   {
     id: 4,

@@ -103,7 +103,7 @@ export default function Index({ mobile }) {
         // if(object.id==61){
     //   setfinishtrigger(true)
     // }
-    await loopsteps(object.trigger);
+    loopsteps(object.trigger);
   };
 
   useEffect(() => {

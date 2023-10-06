@@ -23,7 +23,6 @@ export default function Header(props) {
         <ExitContainer>
           <BsFillXCircleFill
             size={30}
-            className="exit"
             onClick={() => {
               props.settoggle(false);
               window.parent.postMessage("hides", "*");

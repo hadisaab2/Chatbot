@@ -126,6 +126,7 @@ export const ExitContainer = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
+  cursor: pointer;
 `;
 export const LogoPop = keyframes`
     0% {
@@ -206,7 +207,7 @@ export const Input = styled.input`
 export const SendMessage = styled.div`
   border: 0;
   box-shadow: none;
-  cursor: pointer;
+  cursor: ${props=>props.disabled && "pointer"};
   background: linear-gradient(to right, #f61b65, #f51027);
   opacity: 1;
   border-radius: 18px;

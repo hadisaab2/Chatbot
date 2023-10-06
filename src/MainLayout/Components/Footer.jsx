@@ -40,7 +40,7 @@ export default function Footer({
         placeholder="Enter a Message"
         disabled={userinput ? false : true}
       />
-      <SendMessage onClick={handlesend}>
+      <SendMessage disabled={userinput} onClick={()=>userinput && handlesend()}>
         <BsSend style={MdSend} size={20} />
       </SendMessage>
     </FooterContainer>
