@@ -98,6 +98,14 @@ export default function Index({ mobile }) {
       return;
     }
     if (object.endchat) {
+      localStorage.setItem(
+        "data",
+        JSON.stringify({
+          chatstorage: [],
+          id: null,
+          choice: null,
+          info: {},
+        }))
       return;
     }
         // if(object.id==61){
