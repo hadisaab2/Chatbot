@@ -421,15 +421,7 @@ export const chatbotsteps = [
     button: { text: "Learn More", url: "" },
     await: 1000,
   },
-  {
-    id: 42,
-    message:
-      "Our Mobile Operator Management enables us to manage, digitalize and equip MNOs with end-to-end ICT solutions, expert management, acquisition, and AI-driven innovation.",
-    trigger: 8,
-    Component: null,
-    button: { text: "Learn More", url: "" },
-    await: 1000,
-  },
+
   {
     id: 42,
     message: null,
@@ -647,6 +639,15 @@ export const chatbotsteps = [
     Component: YesNo,
     await: 3000,
     type:"About us"
+  },
+  {
+    id: 68,
+    message:
+      "Our Mobile Operator Management enables us to manage, digitalize and equip MNOs with end-to-end ICT solutions, expert management, acquisition, and AI-driven innovation.",
+    trigger: 8,
+    Component: null,
+    button: { text: "Learn More", url: "" },
+    await: 1000,
   },
   //   validation: (value) =>{
   //     if(value.includes("bb")){

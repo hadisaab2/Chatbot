@@ -31,7 +31,7 @@ export const categories = [
   { value: "Digitalization", trigger: "10",img:SmartPhone },
   { value: "Monetization", trigger: "30",img:Money },
   { value: "Connectivity", trigger: "35",img:SmartPhone },
-  { value: "MNO Management", trigger: "42",img:SmartPhone },
-  { value: "Fintech", trigger: "5",img:SmartPhone }
+  { value: "MNO Management", trigger: "68",img:SmartPhone },
+  { value: "Fintech", trigger: "42",img:SmartPhone }
 ];
 
