@@ -14,35 +14,49 @@ export default function Footer({
 }) {
   const [input, setinput] = useState("");
   const handlesend = () => {
-    if(input!=""){
-    setuserinput(false);
-    setcomponents((oldArray) => [...oldArray, <UserMessage message={input} />]);
-    insertstep({ type: "user", value: input });
-    insertdata(stepobject.key, input);
-    setinput("");
-    if (stepobject.validation) {
-      if (!stepobject.validation(input)) {
-        loopsteps(stepobject.errortrigger);
-        return;
-      }
-    }
-    loopsteps(stepobject.trigger);
-  }
+    triggersend();
   };
-
-  const handleinput = (e)=>{
+  const handleKeyPress = (event) => {
+    if (event.key === "Enter") {
+      // Add your action to be triggered here
+      triggersend();
+    }
+  };
+  
+  const handleinput = (e) => {
     let newValue = e.target.value;
 
-    if(stepobject.key=="name"){
-     newValue = newValue.replace(/[^a-zA-Z0-9]/g, '');
+    if (stepobject.key == "name") {
+      newValue = newValue.replace(/[^a-zA-Z0-9]/g, "");
     }
-    if(stepobject.key=="email"){
-      newValue = newValue.replace(/[^a-zA-Z0-9_@]/g, '');
+    if (stepobject.key == "email") {
+      newValue = newValue.replace(/[^a-zA-Z0-9_@.]/g, "");
     }
     if (e.target.value.length < stepobject.limit) {
       setinput(newValue);
     }
-  }
+  };
+
+  const triggersend = () => {
+    if (input != "") {
+      setuserinput(false);
+      setcomponents((oldArray) => [
+        ...oldArray,
+        <UserMessage message={input} />,
+      ]);
+      insertstep({ type: "user", value: input });
+      insertdata(stepobject.key, input);
+      setinput("");
+      if (stepobject.validation) {
+        if (!stepobject.validation(input)) {
+          loopsteps(stepobject.errortrigger);
+          return;
+        }
+      }
+      loopsteps(stepobject.trigger);
+    }
+  };
+
 
   return (
     <FooterContainer>
@@ -51,6 +65,7 @@ export default function Footer({
         onChange={handleinput}
         placeholder="Enter a Message"
         disabled={userinput ? false : true}
+        onKeyPress={handleKeyPress}
       />
       <SendMessage
         disabled={userinput}

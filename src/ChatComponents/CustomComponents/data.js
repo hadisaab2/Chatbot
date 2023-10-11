@@ -14,16 +14,16 @@ export const choices = [
   },
 
   {
-    value: "Talk to an expert",
-    trigger: "46",
-    src: null,
-    Icon: IoCall,
-  },
-  {
     value: "Our Offering",
     trigger: "69",
     src: MontyLogo,
     Icon: null,
+  },
+  {
+    value: "Talk to an expert",
+    trigger: "46",
+    src: null,
+    Icon: IoCall,
   },
 ];
 

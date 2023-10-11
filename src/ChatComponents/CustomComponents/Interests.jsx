@@ -30,7 +30,7 @@ export default function Interests({ object, loopsteps, finishtrigger}) {
   };
     return (
       <>
-      <Bot message={"Please select your interest. "} />
+      {object.interestmsg &&<Bot message={"Please select your interest. "} />}
       {
         !choosen?(<InterestsContainer>
           <InterestsList>

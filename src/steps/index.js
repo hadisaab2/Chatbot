@@ -70,6 +70,7 @@ export const chatbotsteps = [
       { value: "SMS Management Platform", trigger: "9",finishtrigger:63,key:"product" },
     ],
     await: 1000,
+    interestmsg:true
 
   },
   {
@@ -116,7 +117,8 @@ export const chatbotsteps = [
       { value: "DCB", trigger: "62", finishtrigger:63,key:"product"},
     ],
     await: 1000,
-    key:"interests"
+    key:"interests",
+    interestmsg:true
 
   },
   {
@@ -137,7 +139,8 @@ export const chatbotsteps = [
       { value: "Video on Demand", trigger: "14",finishtrigger:63,key:"product" },
     ],
     await: 1000,
-    key:"interests"
+    key:"interests",
+    interestmsg:true
 
   },
   {
@@ -167,7 +170,8 @@ export const chatbotsteps = [
       { value: "Cloud Gaming", trigger: "17",finishtrigger:63 ,key:"product"},
     ],
     await: 1000,
-    key:"interests"
+    key:"interests",
+    interestmsg:true
 
   },
 
@@ -200,7 +204,8 @@ export const chatbotsteps = [
       { value: "eCommerce", trigger: "22",finishtrigger:63,key:"product" },
     ],
     await: 1000,
-    key:"interests"
+    key:"interests",
+    interestmsg:true
 
   },
   {
@@ -251,7 +256,8 @@ export const chatbotsteps = [
       { value: "Enterprise RBT", trigger: "28",finishtrigger:63 ,key:"product"},
     ],
     await: 1000,
-    key:"interests"
+    key:"interests",
+    interestmsg:true
 
   },
   {
@@ -319,7 +325,8 @@ export const chatbotsteps = [
       { value: "P2P & P2A SMS", trigger: "34",finishtrigger:63,key:"product" },
     ],
     await: 1000,
-    key:"interests"
+    key:"interests",
+    interestmsg:true
 
   },
   {
@@ -371,7 +378,8 @@ export const chatbotsteps = [
       { value: "Numberry", trigger: "41",finishtrigger:63,key:"product" },
     ],
     await: 1000,
-    key:"interests"
+    key:"interests",
+    interestmsg:true
 
   },
   {
@@ -438,7 +446,9 @@ export const chatbotsteps = [
       { value: "eWallet", trigger: "45",finishtrigger:63 ,key:"product" },
     ],
     await: 1000,
-    key:"interests"
+    key:"interests",
+    interestmsg:true
+
 
   },
   {
@@ -489,7 +499,7 @@ export const chatbotsteps = [
 
   {
     id: 49,
-    message: "Nice to meet you ${previousvalue}",
+    message: "Nice to meet you, ${previousvalue}",
     trigger: 50,
     Component: null,
     key: "name",
@@ -544,6 +554,8 @@ export const chatbotsteps = [
     await: 200,
     key: "phone",
     trigger: 55,
+    limit:30
+
   },
   {
     id: 55,
@@ -584,6 +596,7 @@ export const chatbotsteps = [
 
     ],
     await: 1000,
+    interestmsg:false
   },
   {
     id: 59,
