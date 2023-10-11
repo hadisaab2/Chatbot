@@ -47,6 +47,13 @@ export const chatbotsteps = [
     await: 2000,
   },
   {
+    id: 69,
+    message: "Oh great! Let me make your life easier, please choose the service you're interested in",
+    Component: null,
+    trigger: 4,
+    await: 1000,
+  },
+  {
     id: 4,
     message: null,
     Component: Categories,
@@ -84,7 +91,7 @@ export const chatbotsteps = [
   {
     id: 9,
     message:
-      "Our SMS Management Platform (B'Pal) allows you to oversee, organize and manage all your messages in 1 single place",
+      "Our SMS Management Platform (B-Pal) allows you to oversee, organize and manage all your messages in 1 single place",
     trigger: 8,
     Component: null,
     button: { text: "Learn More", url: "" },
@@ -477,11 +484,12 @@ export const chatbotsteps = [
     await: 200,
     key: "name",
     trigger: 49,
+    limit:16
   },
 
   {
     id: 49,
-    message: "Nice To Meet You ${previousvalue}",
+    message: "Nice to meet you ${previousvalue}",
     trigger: 50,
     Component: null,
     key: "name",
@@ -511,6 +519,7 @@ export const chatbotsteps = [
         return false;
       }
     },
+    limit:32,
     errortrigger: 52,
   },
   {
@@ -551,6 +560,7 @@ export const chatbotsteps = [
     await: 200,
     key: "company",
     trigger: 57,
+    limit:30
   },
   {
     id: 57,
@@ -590,6 +600,8 @@ export const chatbotsteps = [
     await: 200,
     key: "country",
     trigger: 61,
+    limit:30
+
   },
   {
     id: 61,
@@ -649,12 +661,6 @@ export const chatbotsteps = [
     button: { text: "Learn More", url: "" },
     await: 1000,
   },
-  //   validation: (value) =>{
-  //     if(value.includes("bb")){
-  //       return true
-  //     }else{
-  //       return "not available"
-  //     }
-  //   },
+
 ];
 

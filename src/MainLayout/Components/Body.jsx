@@ -4,8 +4,7 @@ import Bot from "../../ChatComponents/Bot/Bot";
 import UserMessage from "../../ChatComponents/User/UserMessage";
 export default function Body({ components, storagesteps,messagesEndRef }) {
   return (
-    <BodyContainer id="test" style={{scrollBehavior:"smooth"}}>
-      {/* <div  id="test" style={{height:"auto",border:"1px solid black",transition:"all 0.2s ease-out"}}> */}
+    <BodyContainer id="chatbotbody" style={{scrollBehavior:"smooth"}}>
       {storagesteps.length != 0 &&
         storagesteps.map((step) =>
           step.type == "user" ? (
@@ -15,8 +14,6 @@ export default function Body({ components, storagesteps,messagesEndRef }) {
           )
         )}
       {components}
-      {/* <div style={{height:"10%"}}></div> */}
-      {/* </div> */}
     </BodyContainer>
   );
 }

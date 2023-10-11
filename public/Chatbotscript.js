@@ -51,7 +51,6 @@ window.addEventListener("resize", function () {
       notMobileWidth();
     }
   } else {
-    // console.log(hidden)
     iFrame.contentWindow.postMessage("Mobile", "http://92.204.249.139:3003/");
 
     if (!hidden) {

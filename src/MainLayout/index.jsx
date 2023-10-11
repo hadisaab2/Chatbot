@@ -8,7 +8,6 @@ import { findjson } from "../utils.js/Functions";
 import ChatButton from "./Components/ChatButton";
 import { getdata, insertstep } from "../utils.js/localstorageutility";
 import BotMessage from "../ChatComponents/Bot/BotMessage";
-// import { ChatbotContext } from "../Context/ChatbotContext";
 
 export default function Index({ mobile }) {
   const [components, setcomponents] = useState([]);
@@ -87,7 +86,7 @@ export default function Index({ mobile }) {
 
     if (object.Component) {
       AddCustomComponent(object);
-      var objDiv = document.getElementById("test");
+      var objDiv = document.getElementById("chatbotbody");
       objDiv.scrollTop = objDiv.scrollHeight;
       return;
     }
@@ -108,30 +107,19 @@ export default function Index({ mobile }) {
         }))
       return;
     }
-        // if(object.id==61){
-    //   setfinishtrigger(true)
-    // }
+
     loopsteps(object.trigger);
   };
 
   useEffect(() => {
-    // var objDiv = document.getElementById("test")
-    // const scrollHeight = objDiv.scrollHeight;
-    // const clientHeight =objDiv.clientHeight;
-    // const maxScroll = scrollHeight - clientHeight;
-    // objDiv.style.transform=`translateY(-${maxScroll}px)`;
-    // console.log("hii")
 
-    var objDiv = document.getElementById("test");
+
+    var objDiv = document.getElementById("chatbotbody");
     objDiv.scrollTop = objDiv.scrollHeight;
-    // objDiv.scrollTop = objDiv.scrollHeight;
 
   });
 
-  // useEffect(() => {
-  //   var objDiv = document.getElementById("test");
-  //   objDiv.scrollTop = objDiv.scrollHeight;
-  // },[tmp]);
+ 
 
   return (
     <>

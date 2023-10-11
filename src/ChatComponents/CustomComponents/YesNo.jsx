@@ -17,15 +17,15 @@ export default function YesNo({ loopsteps, object }) {
       loopsteps(65);
 
     } else {
-      loopsteps(3);
+      loopsteps(2);
     }
-    setchoosen("Yes");
+    setchoosen("Yes, sure!");
     insertstep({ type: "user", value: "Yes" });
   };
 
   const handlenoclick = () => {
     insertstep({ type: "user", value: "No" });
-    setchoosen("No");
+    setchoosen("No, thank you");
     if (object.type == "About us") {
       loopsteps(65);
 
@@ -36,12 +36,11 @@ export default function YesNo({ loopsteps, object }) {
   if (!choosen) {
     return (
       <BotMessageContainer>
-        {console.log(object.type)}
         <YesNoContainer>
           <YesNoQuestion>{object.type=="About us"?"Want to know more?":"Do you need help with anything else?"}</YesNoQuestion>
           <YesNoButtons>
             <YesButton onClick={handleyesclick}>Yes sure!</YesButton>
-            <NoButton onClick={handlenoclick}>No Thanks</NoButton>
+            <NoButton onClick={handlenoclick}>No, thankyou</NoButton>
           </YesNoButtons>
         </YesNoContainer>
       </BotMessageContainer>
