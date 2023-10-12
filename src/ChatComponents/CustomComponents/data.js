@@ -1,9 +1,12 @@
 import { IoCall } from "react-icons/io5";
 import { MdLocalOffer } from "react-icons/md";
 import MontyLogo from "../../assets/MONTYLOGO.png";
-import Joystick from "../../assets/joystick.png";
-import Money from "../../assets/money.png";
-import SmartPhone from "../../assets/smartphone.png";
+import monetizationimg from "../../assets/monetization.png";
+import fintechimg from "../../assets/fintech.png";
+import connectivity from "../../assets/connectivity.png";
+import digitalization from "../../assets/digitalization.png";
+import advancedmessaging from "../../assets/advanced messaging.png";
+import mnomanagement from "../../assets/mno management.png";
 
 export const choices = [
   {
@@ -28,10 +31,10 @@ export const choices = [
 ];
 
 export const categories = [
-  { value: "Advanced Messaging ", trigger: "5", img: Joystick },
-  { value: "Digitalization", trigger: "10", img: SmartPhone },
-  { value: "Monetization", trigger: "30", img: Money },
-  { value: "Connectivity", trigger: "35", img: SmartPhone },
-  { value: "MNO Management", trigger: "68", img: SmartPhone },
-  { value: "Fintech", trigger: "42", img: SmartPhone },
+  { value: "Advanced Messaging ", trigger: "5", img: advancedmessaging },
+  { value: "Digitalization", trigger: "10", img: digitalization },
+  { value: "Monetization", trigger: "30", img: monetizationimg },
+  { value: "Connectivity", trigger: "35", img: connectivity },
+  { value: "MNO Management", trigger: "68", img: mnomanagement },
+  { value: "Fintech", trigger: "42", img: fintechimg },
 ];

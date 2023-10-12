@@ -554,7 +554,7 @@ export const chatbotsteps = [
     await: 200,
     key: "phone",
     trigger: 55,
-    limit:30
+    limit:16
 
   },
   {
@@ -572,7 +572,7 @@ export const chatbotsteps = [
     await: 200,
     key: "company",
     trigger: 57,
-    limit:30
+    limit:16
   },
   {
     id: 57,
@@ -613,7 +613,7 @@ export const chatbotsteps = [
     await: 200,
     key: "country",
     trigger: 61,
-    limit:30
+    limit:16
 
   },
   {
