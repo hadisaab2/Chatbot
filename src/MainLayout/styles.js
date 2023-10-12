@@ -226,7 +226,9 @@ export const SendMessage = styled.div`
 
 export const MdSend = {
   color: "white",
-  marginTop:"4px"
+  marginTop:"2px",
+  marginRight:"2px"
+
 };
 
 export const SwingRight = keyframes`
