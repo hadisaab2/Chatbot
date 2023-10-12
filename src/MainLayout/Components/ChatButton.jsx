@@ -32,7 +32,7 @@ export default function ChatButton({toggle,loopsteps,settoggle}) {
       {showbubble ? (
         <SpeechBubble>
           <Speech>
-            Hi! I’m Huston and I’m <br />
+            Hi! I’m Houston and I’m <br />
             here to help you.
             
           </Speech>

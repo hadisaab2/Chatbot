@@ -86,7 +86,7 @@ export const chatbotsteps = [
       "Streamline all your communications and engage with your customers like never before, as you join every single channel in one inbox. Our Platform provides 20+ channels including WhatsApp Business API, Viber, Instagram, Messenger, along with many others",
     trigger: 8,
     Component: null,
-    button: { text: "Learn More", url: "" },
+    button: { text: "Learn More", url: "https://stagingv3.montymobile.com/product/monty-communication-platform/" },
     await: 1000,
   },
   {
@@ -95,7 +95,7 @@ export const chatbotsteps = [
       "Our SMS Management Platform (B-Pal) allows you to oversee, organize and manage all your messages in 1 single place",
     trigger: 8,
     Component: null,
-    button: { text: "Learn More", url: "" },
+    button: { text: "Learn More", url: "https://stagingv3.montymobile.com/product-category/sms-management-platform/" },
     await: 1000,
   },
   {
@@ -127,7 +127,7 @@ export const chatbotsteps = [
       "Monty Mobile's Omni-VAS leverages AI for personalized services, churn management, and real-time insights, empowering businesses with the tools they need for growth and success.",
     trigger: 8,
     Component: null,
-    button: { text: "Learn More", url: "" },
+    button: { text: "Learn More", url: "https://stagingv3.montymobile.com/product/omni-vas/" },
     await: 1000,
   },
   {
@@ -149,7 +149,7 @@ export const chatbotsteps = [
       "Our music streaming app brings everyone's favorite tunes to their fingertips, offering endless playlists, personalized recommendations, and a world of music exploration.",
     trigger: 8,
     Component: null,
-    button: { text: "Learn More", url: "" },
+    button: { text: "Learn More", url: "https://stagingv3.montymobile.com/product/music-streaming/" },
     await: 1000,
   },
   {
@@ -158,7 +158,7 @@ export const chatbotsteps = [
       "Deliver a vast library of movies and TV shows directly to your subscribers' screen, letting them watch what they want, when they want, with the tap of a button.",
     trigger: 8,
     Component: null,
-    button: { text: "Learn More", url: "" },
+    button: { text: "Learn More", url: "https://stagingv3.montymobile.com/product/video-on-demand/" },
     await: 1000,
   },
   {
@@ -181,7 +181,7 @@ export const chatbotsteps = [
       "With our eSports, gaming becomes a thrilling competitive sport, allowing subscribers to watch top players, intense tournaments, and stay in the know about all things related to gaming.",
     trigger: 8,
     Component: null,
-    button: { text: "Learn More", url: "" },
+    button: { text: "Learn More", url: "https://stagingv3.montymobile.com/product/esports/" },
     await: 1000,
   },
   {
@@ -190,7 +190,7 @@ export const chatbotsteps = [
       "Our Cloud Gaming platform allows your subscribers to play the latest video games on any device, instantly streaming high-quality gameplay from the cloud, no downloads required.",
     trigger: 8,
     Component: null,
-    button: { text: "Learn More", url: "" },
+    button: { text: "Learn More", url: "https://stagingv3.montymobile.com/product/cloud-gaming/" },
     await: 1000,
   },
   {
@@ -214,7 +214,7 @@ export const chatbotsteps = [
       "Allow your subscribes to instantly access credit, data, and value-added services when they need them most, making their mobile experience smoother and more convenient.",
     trigger: 8,
     Component: null,
-    button: { text: "Learn More", url: "" },
+    button: { text: "Learn More", url: "https://stagingv3.montymobile.com/product/ai-lending-suite/#airtime-lending" },
     await: 1000,
   },
   {
@@ -223,7 +223,7 @@ export const chatbotsteps = [
       "Using the power of AI and data analytics, enable your subscribers to get the devices and utilities they need hassle-free, with flexible lending options that make technology and essentials accessible to all.",
     trigger: 8,
     Component: null,
-    button: { text: "Learn More", url: "" },
+    button: { text: "Learn More", url: "https://stagingv3.montymobile.com/product/ai-lending-suite/#airtime-lending" },
     await: 1000,
   },
   {
@@ -232,7 +232,7 @@ export const chatbotsteps = [
       "Let your subscribers to shop now and pay later with Buy Now, Pay Later (BNPL) financing options, offering flexible payment plans for a seamless shopping experience.",
     trigger: 8,
     Component: null,
-    button: { text: "Learn More", url: "" },
+    button: { text: "Learn More", url: "https://stagingv3.montymobile.com/product/ai-lending-suite/#airtime-lending" },
     await: 1000,
   },
   {
@@ -241,7 +241,7 @@ export const chatbotsteps = [
       "Your subscribers' one-stop online marketplace for shopping, where they can discover, explore, and buy a wide range of products and services from the comfort of their home.",
     trigger: 8,
     Component: null,
-    button: { text: "Learn More", url: "" },
+    button: { text: "Learn More", url: "https://stagingv3.montymobile.com/product/ai-lending-suite/#airtime-lending" },
     await: 1000,
   },
   {
@@ -266,7 +266,7 @@ export const chatbotsteps = [
       "Let your subscribers customize their caller experience with audio ring back tones, adding a personal touch to their phone calls with their favorite tunes and messages.",
     trigger: 8,
     Component: null,
-    button: { text: "Learn More", url: "" },
+    button: { text: "Learn More", url: "https://stagingv3.montymobile.com/product/rbt-suite/" },
     await: 1000,
   },
   {
@@ -275,7 +275,7 @@ export const chatbotsteps = [
       "Give your subscribers a dynamic calling experience with personalized video ring back tones, allowing them to showcase their individuality and creativity.",
     trigger: 8,
     Component: null,
-    button: { text: "Learn More", url: "" },
+    button: { text: "Learn More", url: "https://stagingv3.montymobile.com/product/rbt-suite/" },
     await: 1000,
   },
   {
@@ -284,7 +284,7 @@ export const chatbotsteps = [
       "Elevate your subscribers' calling experience with our network-enabled video ring back tones, utilizing cutting-edge VoLTE technology to deliver personalized, high-quality content.",
     trigger: 8,
     Component: null,
-    button: { text: "Learn More", url: "" },
+    button: { text: "Learn More", url: "https://stagingv3.montymobile.com/product/rbt-suite/" },
     await: 1000,
   },
   {
@@ -293,7 +293,7 @@ export const chatbotsteps = [
       "Have your subscribers get their message across before they even pick up. With Text RBT, they can send pop-ups to their callers and wish them a happy birthday or just let them know they’re in a meeting.",
     trigger: 8,
     Component: null,
-    button: { text: "Learn More", url: "" },
+    button: { text: "Learn More", url: "https://stagingv3.montymobile.com/product/rbt-suite/" },
     await: 1000,
   },
   {
@@ -302,7 +302,7 @@ export const chatbotsteps = [
       "Boost awareness and establish your company’s image with Enterprise RBT. Covert your employee’s mobile phones into a new advertising channel and make sure your ads reach all your callers.",
     trigger: 8,
     Component: null,
-    button: { text: "Learn More", url: "" },
+    button: { text: "Learn More", url: "https://stagingv3.montymobile.com/product/rbt-suite/" },
     await: 1000,
   },
   {
@@ -335,7 +335,7 @@ export const chatbotsteps = [
       "Identify monetization patterns while leading the way to your transformation and maximize your revenue with our 20+ years of experience and secure messaging traffic on over 500 mobile networks.",
     trigger: 8,
     Component: null,
-    button: { text: "Learn More", url: "" },
+    button: { text: "Learn More", url: "https://stagingv3.montymobile.com/product/international-a2p-sms-monetization/" },
     await: 1000,
   },
   {
@@ -344,7 +344,7 @@ export const chatbotsteps = [
       "Our advanced in-house developed SMS Firewall - Smartwall - is equipped to block grey routes and leackages, allowing you to secure your revenue streams.",
     trigger: 8,
     Component: null,
-    button: { text: "Learn More", url: "" },
+    button: { text: "Learn More", url: "https://stagingv3.montymobile.com/product/sms-firewall/" },
     await: 1000,
   },
   {
@@ -353,7 +353,7 @@ export const chatbotsteps = [
       "An in-house developed system that prevents Flash Calls from bypassing legitimate A2P SMS channels and verifying mobile numbers, providing a comprehensive and reliable solution for businesses and consumers alike.",
     trigger: 8,
     Component: null,
-    button: { text: "Learn More", url: "" },
+    button: { text: "Learn More", url: "https://stagingv3.montymobile.com/product/flash-call-prevention-solution/" },
     await: 1000,
   },
   {
@@ -362,7 +362,7 @@ export const chatbotsteps = [
       "Increase your two-way connectivity to worldwide operators with our vast experience and deep market knowledge as we manage your P2P & P2A SMS Hubbing.",
     trigger: 8,
     Component: null,
-    button: { text: "Learn More", url: "" },
+    button: { text: "Learn More", url: "https://stagingv3.montymobile.com/product/p2p-p2a-sms-hubbing/" },
     await: 1000,
   },
   {
@@ -388,7 +388,7 @@ export const chatbotsteps = [
       "Empower your devices and users with seamless connectivity through our advanced eSIM platform, ensuring instant, reliable communication.",
     trigger: 8,
     Component: null,
-    button: { text: "Learn More", url: "" },
+    button: { text: "Learn More", url: "https://stagingv3.montymobile.com/product/esim-instant-connectivity-consumer-platform/" },
     await: 1000,
   },
   {
@@ -397,7 +397,7 @@ export const chatbotsteps = [
       "Enables you to carry the secure provisioning and management of electronic SIM (eSIM) profiles, protecting sensitive user data and preventing unauthorized access.",
     trigger: 8,
     Component: null,
-    button: { text: "Learn More", url: "" },
+    button: { text: "Learn More", url: "https://stagingv3.montymobile.com/product/esim-entitlement-server/" },
     await: 1000,
   },
   {
@@ -406,7 +406,7 @@ export const chatbotsteps = [
       "Take control of your eSIM experience with our user-friendly portal, managing your device connectivity and settings with ease and convenience.",
     trigger: 8,
     Component: null,
-    button: { text: "Learn More", url: "" },
+    button: { text: "Learn More", url: "https://stagingv3.montymobile.com/product/esim-customer-portal/" },
     await: 1000,
   },
   {
@@ -415,7 +415,7 @@ export const chatbotsteps = [
       "Monty eSIM app is your trusty travel companion, offering budget-friendly international data bundles in 190+ countries. No more roaming fees, public Wi-Fi risks, and local SIM card hassles, just seamless connectivity wherever you are!",
     trigger: 8,
     Component: null,
-    button: { text: "Learn More", url: "" },
+    button: { text: "Learn More", url: "https://stagingv3.montymobile.com/product/monty-esim-app/" },
     await: 1000,
   },
   {
@@ -424,7 +424,7 @@ export const chatbotsteps = [
       "Elevate your business with our dedicated portal for eSIM resellers, streamlining your operations and enabling you to deliver seamless connectivity services to your customers.",
     trigger: 8,
     Component: null,
-    button: { text: "Learn More", url: "" },
+    button: { text: "Learn More", url: "https://stagingv3.montymobile.com/product/esim-reseller-portal/" },
     await: 1000,
   },
   {
@@ -433,7 +433,7 @@ export const chatbotsteps = [
       "Your virtual number app for enhanced privacy in shopping and app subscriptions, providing you with a secure and convenient way to stay connected while protecting your personal information.",
     trigger: 8,
     Component: null,
-    button: { text: "Learn More", url: "" },
+    button: { text: "Learn More", url: "https://stagingv3.montymobile.com/product/numberry/" },
     await: 1000,
   },
 
@@ -457,7 +457,7 @@ export const chatbotsteps = [
       "Our Mobile Digital Banking Services (MDBS) revolutionize MNOs' financial offerings with AI-driven features, seamless transactions, money management, and enhanced security, bridging telecom and fintech for a holistic banking.",
     trigger: 8,
     Component: null,
-    button: { text: "Learn More", url: "" },
+    button: { text: "Learn More", url: "https://stagingv3.montymobile.com/product-category/fintech/" },
     await: 1000,
   },
   {
@@ -466,7 +466,7 @@ export const chatbotsteps = [
       "Allow your unbanked subscribers to pay bills, make transfers, and manage their money seamlessly right from their smartphones with Monty Mobile’s eWallet.",
     trigger: 8,
     Component: null,
-    button: { text: "Learn More", url: "" },
+    button: { text: "Learn More", url: "https://stagingv3.montymobile.com/product/mdbs/#e-wallet" },
     await: 1000,
   },
 
@@ -628,7 +628,7 @@ export const chatbotsteps = [
     message:"Our Direct Carrier Billing solution simplifies online payments via mobile phone bills, offering convenience, security, flexibility, and expanded reach for users, operators, and merchants.",
     trigger: 8,
     Component: null,
-    button: { text: "Learn More", url: "" },
+    button: { text: "Learn More", url: "https://stagingv3.montymobile.com/product/direct-carrier-billing-dcb/" },
     await: 1000,
   },
   {
@@ -671,7 +671,7 @@ export const chatbotsteps = [
       "Our Mobile Operator Management enables us to manage, digitalize and equip MNOs with end-to-end ICT solutions, expert management, acquisition, and AI-driven innovation.",
     trigger: 8,
     Component: null,
-    button: { text: "Learn More", url: "" },
+    button: { text: "Learn More", url: "https://stagingv3.montymobile.com/product-category/mno-management/" },
     await: 1000,
   },
 

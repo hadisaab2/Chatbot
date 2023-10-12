@@ -14,10 +14,13 @@ export default function Footer({
 }) {
   const [input, setinput] = useState("");
   const handlesend = () => {
-    triggersend();
+    if( input.trim() != ''){
+      triggersend();
+
+    }
   };
   const handleKeyPress = (event) => {
-    if (event.key === "Enter") {
+    if (event.key === "Enter" && input.trim() != '') {
       // Add your action to be triggered here
       triggersend();
     }
@@ -26,11 +29,14 @@ export default function Footer({
   const handleinput = (e) => {
     let newValue = e.target.value;
 
-    if (stepobject.key == "name") {
-      newValue = newValue.replace(/[^a-zA-Z0-9]/g, "");
+    if (stepobject.key == "name" || stepobject.key == "company" || stepobject.key == "country" ) {
+      newValue = newValue.replace(/[^a-zA-Z ]/g, "");
+    }
+    if (stepobject.key == "phone" ) {
+      newValue = newValue.replace(/[^0-9+]/g, "");
     }
     if (stepobject.key == "email") {
-      newValue = newValue.replace(/[^a-zA-Z0-9_@.]/g, "");
+      newValue = newValue.replace(/[^a-zA-Z0-9_@.-]/g, "");
     }
     if (e.target.value.length < stepobject.limit) {
       setinput(newValue);
