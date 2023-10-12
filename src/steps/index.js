@@ -44,7 +44,7 @@ export const chatbotsteps = [
     id: 3,
     message: null,
     Component: Chatchoices,
-    await: 2000,
+    await: 1500,
   },
   {
     id: 69,
@@ -57,7 +57,7 @@ export const chatbotsteps = [
     id: 4,
     message: null,
     Component: Categories,
-    await: 1000,
+    await: 2000,
     finishtrigger:true,
     key:"maincategory"
   },
