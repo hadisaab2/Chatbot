@@ -23,6 +23,9 @@ export const ChatbotButton = styled.div`
   right: 20px;
   display: ${(props) => (props.toggle ? "none" : "block")};
   overflow: hidden;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 `;
 
 export const ChatbotImage = styled.img`
@@ -223,6 +226,7 @@ export const SendMessage = styled.div`
 
 export const MdSend = {
   color: "white",
+  marginTop:"4px"
 };
 
 export const SwingRight = keyframes`
