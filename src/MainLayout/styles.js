@@ -13,7 +13,7 @@ export const ChatbotIn = keyframes`
 `;
 export const ChatbotButton = styled.div`
   width: 3.6em;
-  /* filter: drop-shadow(0px 1px 6px gray); */
+  filter: drop-shadow(0px 1px 2px  gray);
   height: 3.6em;
   border-radius: 1.8em;
   align-items: center;
