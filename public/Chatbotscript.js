@@ -17,8 +17,8 @@ function notMobileWidth() {
 window.addEventListener("message", (evt) => {
   var iFrame = document.getElementById("myframe");
   if(evt.data.eventid=="redirect"){
-    console.log("entereddd")
-    console.log(evt.data.url)
+    // console.log("entereddd")
+    // console.log(evt.data.url)
 
     window.location.href=evt.data.url;
   }
