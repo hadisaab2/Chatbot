@@ -42,8 +42,10 @@ export default function ({ object, userinfo }) {
             {object.button && (
               <MessageButton
                 onClick={() => {
-                  window.location.href = object.button.url;
-                }}
+                  window.parent.postMessage({
+                    eventid:"redirect",
+                    url:object.button.url
+                  }, "*");                }}
               >
                 {object.button.text}
               </MessageButton>

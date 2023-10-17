@@ -16,6 +16,13 @@ function notMobileWidth() {
 
 window.addEventListener("message", (evt) => {
   var iFrame = document.getElementById("myframe");
+  if(evt.data.eventid=="redirect"){
+    console.log("entereddd")
+    console.log(evt.data.url)
+
+    window.location.href=evt.data.url;
+  }
+
   if (evt.data == "checksize") {
     if (document.documentElement.clientWidth > 600) {
       iFrame.contentWindow.postMessage("notMobile", "http://92.204.249.139:3003/");

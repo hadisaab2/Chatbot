@@ -35,6 +35,6 @@ export const categories = [
   { value: "Digitalization", trigger: "10", img: digitalization },
   { value: "Monetization", trigger: "30", img: monetizationimg },
   { value: "Connectivity", trigger: "35", img: connectivity },
-  { value: "MNO Management", trigger: "68", img: mnomanagement },
+  { value: "MNO Management", trigger: "68",finishtrigger:"63", img: mnomanagement },
   { value: "Fintech", trigger: "42", img: fintechimg },
 ];
