@@ -13,6 +13,7 @@ export const ChatbotIn = keyframes`
 `;
 export const ChatbotButton = styled.div`
   width: 3.6em;
+  filter: drop-shadow(0px 1px 6px gray);
   height: 3.6em;
   border-radius: 1.8em;
   align-items: center;
@@ -25,14 +26,11 @@ export const ChatbotButton = styled.div`
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  box-shadow:0px 1px 3px  gray;
-
 `;
 
 export const ChatbotImage = styled.img`
   width: 100%;
   height: 100%;
-
 `;
 
 const chatbotheight = (props) => {
@@ -71,7 +69,6 @@ export const Chatbot = styled.div`
   display: ${(props) => (props.toggle ? "flex" : "none")};
   flex-direction: column;
   z-index: 300;
-  
 `;
 
 export const BodyContainer = styled.div`
@@ -96,7 +93,6 @@ export const BodyContainer = styled.div`
   }
   flex: 1;
   /* transition: all 1s  ease; */
-
 `;
 
 //  Header Styling
@@ -182,7 +178,6 @@ export const Title = styled.span`
 
 export const FooterContainer = styled.div`
   background-color: #f5f5f5;
-
   border-bottom-left-radius: 27px;
   border-bottom-right-radius: 27px;
   position: relative;
@@ -207,13 +202,19 @@ export const Input = styled.input`
   height: 70%;
   width: 95%;
   display: flex;
+  ::placeholder {
+    color: ${(props) => !props.userinput && "#e0e0e0"};
+  }
 `;
 
 export const SendMessage = styled.div`
   border: 0;
   box-shadow: none;
-  cursor: ${props=>props.disabled && "pointer"};
-  background: linear-gradient(to right, #f61b65, #f51027);
+  cursor: ${(props) => props.disabled && "pointer"};
+  background-color: ${(props) =>
+    props.disabled
+      ? "#f51027"
+      : "#bcbcbc"};
   opacity: 1;
   border-radius: 18px;
   width: 36px;
@@ -224,13 +225,12 @@ export const SendMessage = styled.div`
   position: absolute;
   right: 5%;
   z-index: 999;
+  color: ${(props) => (props.disabled ? "white" : "#e0e0e0")};
 `;
 
 export const MdSend = {
-  color: "white",
-  marginTop:"2px",
-  marginRight:"2px"
-
+  marginTop: "2px",
+  marginRight: "2px",
 };
 
 export const SwingRight = keyframes`
@@ -276,6 +276,5 @@ export const SpeechBubble = styled.div`
     margin-right: -1em;
     z-index: 200;
   }
-
 `;
 export const Speech = styled.span``;

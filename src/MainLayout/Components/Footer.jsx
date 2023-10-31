@@ -29,9 +29,13 @@ export default function Footer({
   const handleinput = (e) => {
     let newValue = e.target.value;
 
-    if (stepobject.key == "name" || stepobject.key == "company" || stepobject.key == "country" ) {
+    if (stepobject.key == "name"  || stepobject.key == "country" ) {
       newValue = newValue.replace(/[^a-zA-Z ]/g, "");
     }
+    if (stepobject.key == "company") {
+      newValue = newValue.replace(/[^a-zA-Z0-9]/g, "");
+    }
+    
     if (stepobject.key == "phone" ) {
       newValue = newValue.replace(/[^0-9+]/g, "");
     }
@@ -65,13 +69,14 @@ export default function Footer({
 
 
   return (
-    <FooterContainer>
+    <FooterContainer userinput={userinput}>
       <Input
         value={input}
         onChange={handleinput}
         placeholder="Enter a Message"
         disabled={userinput ? false : true}
         onKeyPress={handleKeyPress}
+        userinput={userinput}
       />
       <SendMessage
         disabled={userinput}

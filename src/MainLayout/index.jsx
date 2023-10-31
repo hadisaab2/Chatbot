@@ -8,6 +8,7 @@ import { findjson } from "../utils.js/Functions";
 import ChatButton from "./Components/ChatButton";
 import { getdata, insertstep } from "../utils.js/localstorageutility";
 import BotMessage from "../ChatComponents/Bot/BotMessage";
+import axios from "axios";
 
 export default function Index({ mobile }) {
   const [components, setcomponents] = useState([]);
@@ -71,10 +72,22 @@ export default function Index({ mobile }) {
   };
 
   const loopsteps = async (i) => {
+
     const jsonstoredData = JSON.parse(localStorage.getItem("data"));    
     const updatedObject={...jsonstoredData,id:i}
     localStorage.setItem('data', JSON.stringify(updatedObject));
-
+    console.log(i)
+    if(i=="63"){
+      axios.post("https://tam-omni.montymobile.com/omnichannel/clients/montymobile/chatbots/website_chatbot/post_data_to_crm/", jsonstoredData.info)
+      .then((response) => {
+        // Handle the response data here
+        console.log('Response:', response.data);
+      })
+      .catch((error) => {
+        // Handle any errors here
+        console.error('Error:', error);
+      });
+    }
     let object = findjson(chatbotsteps, i);
     await new Promise((r) => setTimeout(r, object.await));
 

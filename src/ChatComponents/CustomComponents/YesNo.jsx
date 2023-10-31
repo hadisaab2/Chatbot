@@ -16,14 +16,18 @@ export default function YesNo({ loopsteps, object }) {
     setchoosen("Yes, sure!");
     insertstep({ type: "user", value: "Yes, sure!" });
     if (object.type == "About us") {
-      window.location.href="https://stagingv3.montymobile.com/"
+      window.parent.postMessage({
+        eventid:"redirect",
+        url:"https://montymobile.com/"
+      }, "*");   
+
       loopsteps(65);
 
     } else {
       loopsteps(2);
     }
 
-  };
+}
 
   const handlenoclick = () => {
     insertstep({ type: "user", value: "No, thank you." });
